@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F3EEE4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#15211C" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet" />
+    <script>
+      try {
+        var stored = localStorage.getItem("finflow-theme");
+        if (stored === "dark" || stored === "light") document.documentElement.dataset.theme = stored;
+      } catch (error) {}
+    </script>
+    <meta
+      name="description"
+      content="FinFlow personal banking and financial insights."
+    />
+    <title>FinFlow — Personal banking</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

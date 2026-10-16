@@ -1,0 +1,3 @@
+export default function ScanFrame() {
+  return <div className="scan-frame pointer-events-none absolute inset-8 rounded-2xl border-2 border-white/90 shadow-[0_0_0_999px_rgba(15,23,42,.45)]" aria-hidden="true"><span className="absolute -left-0.5 -top-0.5 h-7 w-7 border-l-4 border-t-4 border-brand-300" /><span className="absolute -right-0.5 -top-0.5 h-7 w-7 border-r-4 border-t-4 border-brand-300" /><span className="absolute -bottom-0.5 -left-0.5 h-7 w-7 border-b-4 border-l-4 border-brand-300" /><span className="absolute -bottom-0.5 -right-0.5 h-7 w-7 border-b-4 border-r-4 border-brand-300" /></div>;
+}
