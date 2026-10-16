@@ -1,0 +1,13 @@
+package com.finflow.repository;
+
+import com.finflow.entity.WalletLedgerEntry;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface WalletLedgerEntryRepository extends JpaRepository<WalletLedgerEntry, Long> {
+    List<WalletLedgerEntry> findByWalletIdOrderByCreatedAtDesc(Long walletId);
+    List<WalletLedgerEntry> findByUserIdOrderByCreatedAtDesc(Long userId);
+    Optional<WalletLedgerEntry> findByUserIdAndIdempotencyKey(Long userId, String idempotencyKey);
+}
